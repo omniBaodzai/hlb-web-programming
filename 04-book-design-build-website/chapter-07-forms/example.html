@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Forms</title>
+    </head>
+
+    <body>
+        <form action="https://www.example.com/review.php" method="post">
+            <!-- Your Details -->
+            <fieldset>
+                <legend>Your Details:</legend>
+
+                <label for="username">Name:</label>
+                <input id="username" type="text" name="username" size="30" maxlength="100" />
+
+                <br />
+                <br />
+
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" size="30" maxlength="100" />
+            </fieldset>
+
+            <br />
+
+            <!-- Your Review -->
+            <fieldset>
+                <legend>Your Review:</legend>
+
+                <p>
+                    <label for="hear-about">How did you here about us?</label>
+                    <select name="platform" id="hear-about">
+                        <option value="google" selected="selected">Google</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="youtube">Youtube</option>
+                        <option value="news">News</option>
+                    </select>
+                </p>
+
+                <p>Would you visit again?
+                    <br />
+
+                    <input id="yes" type="radio" name="wouldVisitAgain" value="yes"/>
+                    <label for="yes">Yes</label>
+
+                    <input id="no" type="radio" name="wouldVisitAgain" value="no" />
+                    <label for="no">No</label>
+
+                    <input id="Maybe" type="radio" name="wouldVisitAgain" value="Maybe" />
+                    <label for="Maybe">Maybe</label>
+                </p>
+
+                <p>
+                    <label for="cmt">Comments:</label> <br />
+                    <textarea id="cmt" name="comments" cols="40" rows="4"></textarea>
+                </p>
+
+                <input id="emailUpdates" type="checkbox" name="emailUpdates" value="yes" checked="checked" />
+                <label for="emailUpdates">Sign me up for email updates</label>
+                
+                <br />
+
+                <button type="submit">Submit Review</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
